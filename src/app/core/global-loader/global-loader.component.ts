@@ -8,7 +8,7 @@ import { GlobalLoaderService } from '../services/global-loader.service';
 })
 export class GlobalLoaderComponent implements OnInit {
 
-  constructor (private globalLoaderService: GlobalLoaderService) {} 
+  constructor (public globalLoaderService: GlobalLoaderService) {} 
 
   ngOnInit(): void {
     
