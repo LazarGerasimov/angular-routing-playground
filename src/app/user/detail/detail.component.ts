@@ -13,5 +13,6 @@ export class UserDetailComponent {
     private activatedRoute: ActivatedRoute
   ) {
     console.log(this.activatedRoute.snapshot.params);
+    this.activatedRoute.params.subscribe(console.log);
   }
 }
