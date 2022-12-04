@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UserListComponet } from './list/list.component';
 import { UserDetailComponent } from './detail/detail.component';
 import { RouterModule } from '@angular/router';
+import { AuthGuard } from './user-detail.guard';
 
 
 
@@ -21,6 +22,7 @@ import { RouterModule } from '@angular/router';
       },
       {
         path: 'user/details/:id',
+        canActivate: [AuthGuard],
         component: UserDetailComponent
       },
     ])
