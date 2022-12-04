@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UserListComponet } from './list/list.component';
 import { UserDetailComponent } from './detail/detail.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,7 +13,17 @@ import { UserDetailComponent } from './detail/detail.component';
     UserDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      {
+        path: 'user/list',
+        component: UserListComponet
+      },
+      {
+        path: 'user/details',
+        component: UserDetailComponent
+      },
+    ])
   ], 
   exports: [
     UserListComponet
