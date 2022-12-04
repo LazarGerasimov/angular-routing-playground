@@ -20,13 +20,14 @@ import { RouterModule } from '@angular/router';
         component: UserListComponet
       },
       {
-        path: 'user/details',
+        path: 'user/details/:id',
         component: UserDetailComponent
       },
     ])
   ], 
   exports: [
-    UserListComponet
+    UserListComponet,
+    UserDetailComponent
   ]
 })
 export class UserModule { }
