@@ -9,7 +9,7 @@ import { UserService } from '../user.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit {
+export class UserListComponet implements OnInit {
 
   userList: IUser [] | null = [];
 
