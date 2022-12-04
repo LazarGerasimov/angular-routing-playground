@@ -9,7 +9,7 @@ const routes: Routes = [
     redirectTo: '/user/list'
   },
   {
-    path: 'post-list',
+    path: 'post/list',
     component: PostListComponent
   }
 ];
